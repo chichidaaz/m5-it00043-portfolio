@@ -1,0 +1,166 @@
+
+/* General Style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: white;
+    color: black;
+}
+
+header {
+    background-color: #eeeeee;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 10px;
+}
+
+/* Navigation */
+.nav-menu {
+    display: none;
+    margin: 15px;
+}
+
+.nav-menu.show {
+    display: block;
+}
+
+.nav-menu a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555555;
+}
+
+/* Project Cards */
+#content-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.project-card {
+    border: 1px solid #cccccc;
+    padding: 15px;
+    width: 200px;
+    background-color: #f7f7f7;
+}
+
+/* Contact Form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 120px;
+}
+
+small {
+    display: block;
+    color: red;
+    margin-top: 5px;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+    border: 1px solid red;
+}
+
+#form-status {
+    margin-top: 10px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #222222;
+    color: white;
+}
+
+body.dark-mode header {
+    background-color: #333333;
+}
+
+body.dark-mode .nav-menu a {
+    color: white;
+}
+
+body.dark-mode .project-card {
+    background-color: #333333;
+    color: white;
+    border-color: #555555;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #333333;
+    color: white;
+    border-color: #777777;
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    #content-list {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: auto;
+    }
+}
